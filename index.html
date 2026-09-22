@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiranmai Kuna - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Hiranmai</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="themeBtn">🌙</button>
+</header>
+
+<section id="home" class="hero">
+    <div>
+        <p class="welcome">HELLO, I'M</p>
+        <h1>Hiranmai Kuna</h1>
+        <h2>AI & ML Student</h2>
+        <p>
+            I am interested in Artificial Intelligence,
+            Machine Learning and modern web technologies.
+        </p>
+        <a href="#projects" class="btn">View Projects</a>
+    </div>
+
+    <div class="profile">
+        <div class="circle">AI</div>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="title">About Me</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Who I Am</h3>
+            <p>
+                I am an AIML student passionate about programming,
+                machine learning and responsive web development.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>My Goal</h3>
+            <p>
+                My goal is to develop useful technology projects
+                and improve my skills in AI, ML and web development.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="title">My Skills</h2>
+
+    <div class="skills">
+        <div>Python</div>
+        <div>Machine Learning</div>
+        <div>HTML5</div>
+        <div>CSS3</div>
+        <div>JavaScript</div>
+        <div>GitHub</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="title">My Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>House Price Prediction</h3>
+            <p>
+                A machine learning regression project that predicts
+                house prices using property features.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Responsive Portfolio</h3>
+            <p>
+                A responsive portfolio website created using
+                HTML5 and advanced CSS3.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>AI & ML Projects</h3>
+            <p>
+                Exploring machine learning concepts and practical
+                Artificial Intelligence applications.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="title">Contact Me</h2>
+
+    <div class="contact">
+        <p>Email: hiranmai@example.com</p>
+        <p>Location: India</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Hiranmai Kuna | Responsive Portfolio</p>
+</footer>
+
+<script>
+const themeBtn = document.getElementById("themeBtn");
+
+themeBtn.addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        themeBtn.textContent = "☀️";
+    } else {
+        themeBtn.textContent = "🌙";
+    }
+});
+</script>
+
+</body>
+</html>
